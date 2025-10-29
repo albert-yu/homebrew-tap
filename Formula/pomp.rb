@@ -1,25 +1,25 @@
 class Pomp < Formula
   desc "Data CLI tool inspired by Boop"
   homepage "https://github.com/albert-yu/pomp"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.1/pomp-aarch64-apple-darwin.tar.xz"
-      sha256 "b8a83fcf9d8dbf100afe5f694088f3197870ba0e13ef9096c0e3a3fa33fa92e0"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.2/pomp-aarch64-apple-darwin.tar.xz"
+      sha256 "09546c258c18e1f6c0e4a68d614d0288dc5af1637080a6b27264dcd5dff5b628"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.1/pomp-x86_64-apple-darwin.tar.xz"
-      sha256 "f4d089098d9ba04a7d25129e54aac1b9f0799b6e3d6887979c347a2ddacb8210"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.2/pomp-x86_64-apple-darwin.tar.xz"
+      sha256 "daa5185c8a511e68f6dcd5414f1b7fc8368959cac902059eed5e9ae403c5268b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.1/pomp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b8964a419e5f5ff3e0eedad5de9b4dcb2b37f0ce78a1d2346219e47151d58274"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.2/pomp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7c6b57551c5d1bf1d9669b5ac4078079fa32e9e3f81322bb7085a7971cda399b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.1/pomp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7cb0d970899f20ebbea0a75a7a9d3b95bfc17c3dce81f6ca2974690ccd0b5fcb"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.2/pomp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "af415da5e35ef51082b42dceddf2348f15ad713ece59e534e1252f1b6b9c9c6d"
     end
   end
 
