@@ -1,25 +1,25 @@
 class Visi < Formula
   desc "A developer-friendly CLI for reading, evaluating formulas in, and updating Excel (.xlsx) files"
   homepage "https://github.com/albert-yu/visi"
-  version "0.2.18"
+  version "0.2.19"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/albert-yu/visi/releases/download/v0.2.18/visi-aarch64-apple-darwin.tar.xz"
-      sha256 "a832d15acb4e39cbabb7110935954b9b1d5afe08004953c3507dae10869c7e00"
+      url "https://github.com/albert-yu/visi/releases/download/v0.2.19/visi-aarch64-apple-darwin.tar.xz"
+      sha256 "eeefa36e95aba726b41347c811271e78f79905dbd89a1a4f74fe27ca6586abb5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/albert-yu/visi/releases/download/v0.2.18/visi-x86_64-apple-darwin.tar.xz"
-      sha256 "d8a5cdf2da1937c16e3a1fa14b1cb459027d1f5eff222255ef30a6b1e6debffd"
+      url "https://github.com/albert-yu/visi/releases/download/v0.2.19/visi-x86_64-apple-darwin.tar.xz"
+      sha256 "eaff6bd298eda73131d254b78b6bfb174dc08e2c0d35ad57d44789858193ada6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/albert-yu/visi/releases/download/v0.2.18/visi-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e22e56a950000398c179965b151444c0f476c262f1b32cd101a792ad2b97f303"
+      url "https://github.com/albert-yu/visi/releases/download/v0.2.19/visi-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "490bf4cc9457ff617d9e1c4c9dbdc09d13c58f66aaf8e4497c400c37a5f1604d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/albert-yu/visi/releases/download/v0.2.18/visi-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "551b54dd15dfe891c43f7a9b632b7e0781c16bc064c5ac20335fc1ff0a29076d"
+      url "https://github.com/albert-yu/visi/releases/download/v0.2.19/visi-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "48f0e9167f82e1b1b870c6587abdaafe5e4220f3577578aec35b969749645a56"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
