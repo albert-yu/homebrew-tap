@@ -1,25 +1,25 @@
 class Pomp < Formula
   desc "Data CLI tool inspired by Boop"
   homepage "https://github.com/albert-yu/pomp"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.4/pomp-aarch64-apple-darwin.tar.xz"
-      sha256 "f7c0bf6cb20a028022d14b8642768df78d128f04a3526486ee19321a6b8e61bc"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.5/pomp-aarch64-apple-darwin.tar.xz"
+      sha256 "9352af5a213ec33b666dd486354d7fbfc52c8cf6490f320d318f212b09b2d0ca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.4/pomp-x86_64-apple-darwin.tar.xz"
-      sha256 "cd190f372d8453ceebad80bd4559cab4fda7b6ffc70f1e4a9ff5f61a8d0d8512"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.5/pomp-x86_64-apple-darwin.tar.xz"
+      sha256 "f938e3da0a04d2407e55b4661aadbebe4beb7076a7c1d21a99d32bfa1dc24eaf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.4/pomp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "76c0a92e2c0cfd8b2014a232270fb835ce43512b9ffe0ca9891ee96702d560ff"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.5/pomp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "22267816f0875ab182467050512f8828c5d6f0224635d3c29f0537bf169a1e47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/albert-yu/pomp/releases/download/v0.1.4/pomp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cf3dd0321cd13c9003c6154f4d97d44b20c3d88bfaa2662b299c30576379aaf7"
+      url "https://github.com/albert-yu/pomp/releases/download/v0.1.5/pomp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f67f7ba4e148da6aada43c4274d714658e1894f721e4c62ab0860415f08cf5f3"
     end
   end
 
@@ -47,10 +47,18 @@ class Pomp < Formula
   end
 
   def install
-    bin.install "pomp" if OS.mac? && Hardware::CPU.arm?
-    bin.install "pomp" if OS.mac? && Hardware::CPU.intel?
-    bin.install "pomp" if OS.linux? && Hardware::CPU.arm?
-    bin.install "pomp" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "pomp"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "pomp"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "pomp"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "pomp"
+    end
 
     install_binary_aliases!
 
